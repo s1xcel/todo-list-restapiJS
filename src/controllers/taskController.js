@@ -29,7 +29,7 @@ class TaskController {
     try {
       const id = req.params.id;
       const userId = req.user.id;
-      const task = await taskService.getTaskById(id, userId); // передаем userId для проверки
+      const task = await taskService.getTaskById(id, userId);
       res.status(200).json(task);
     } catch (err) {
       console.error('Error fetching task by ID:', err);

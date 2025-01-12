@@ -20,7 +20,7 @@ class TaskRepository {
   };
 
   async getTasksByUserIdAndStatus(filters) {
-    return Task.find(filters);  // Это будет искать задачи по userId и status
+    return Task.find(filters);
   }
 }
 
